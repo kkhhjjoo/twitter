@@ -12,49 +12,49 @@
           <img src="images/twitter-logo.png" alt="Twitter" />
         </a>
       </h1>
-      <nav>
+      <nav class="gnb">
         <h1>Menu</h1>
         <ul>
           <li>
-            <a href="#">
+            <a href="/home" aria-current="location">
               <span>Current page</span>
               <!-- Icon -->
               Home
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/explore">
               <!-- Icon -->
               Explore
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/notifications">
               <strong aria-label="5 Unread Notifications">5</strong>
               <!-- Icon -->
               Notifications
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/messages">
               <!-- Icon -->
               Messages
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/bookmarks">
               <!-- Icon -->
               Bookmarks
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="lists">
               <!-- Icon -->
               Lists
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="profile">
               <!-- Icon -->
               Profile
             </a>
@@ -585,13 +585,116 @@
       </section>
     </main>
     <aside>
-      <header>
         <h1>Worldwide trends</h1>
         <button type="button" aria-label="Options">
           <!-- Icon -->
         </button>
-      </header>
+        <div>
+          <section class="tweet-form">
+            <h1>Tweet Form</h1>
 
+            <form action="#" method="POST">
+              <a href="/kimbugx">
+                <img src="./assets/images/img-user-1.jpg" alt="@kimbugx" />
+              </a>
+              <textarea placeholder="What's happening?" maxlength="280"></textarea>
+              <button>Everyone can reply</button>
+
+              <div>
+                <div>
+                  <button type="button">
+                    <span>Media</span>
+                  </button>
+                  <button type="button">
+                    <span>GIF</span>
+                  </button>
+                  <button type="button">
+                    <span>Poll</span>
+                  </button>
+                  <button type="button">
+                    <span>Emoji</span>
+                  </button>
+                  <button type="button">
+                    <span>Schedule</span>
+                  </button>
+
+                  <input type="file" multiple accept="image/*, video/*" />
+                </div>
+
+                <div>
+                  <strong aria-label="0 out of 280 characters"></strong>
+                  <button type="button">
+                    <span>Add</span>
+                  </button>
+                  <button type="submit">Tweet</button>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="timeline">
+            <h1>Your Timeline</h1>
+
+            <ol>
+              <li>
+                <article class="feed">
+                  <header>
+                    <h2>A Tweet from 뵈요를 보면 우는 펭귄</h2>
+                    <a href="/seeupeng">
+                      <img src="./assets/images/img-user-2.png" alt="뵈요를 보면 우는 펭귄" />
+                    </a>
+
+                    <strong>
+                      <a href="/seeupeng"> 뵈요를 보면 우는 펭귄 </a>
+                    </strong>
+                    <dl>
+                      <div>
+                        <dt>Username</dt>
+                        <dd>
+                          <a href="/seeupeng"> @seeupeng </a>
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Posted</dt>
+                        <dd>
+                          <time datetime="1993-05-26">May 26</time>
+                        </dd>
+                      </div>
+                    </dl>
+
+                    <div>
+                      <button type="button">
+                        <span>More</span>
+                      </button>
+                      <div>
+                        <button type="button">
+                          <!-- Icon -->
+                          Show less often
+                        </button>
+                        <button type="button">
+                          <!-- Icon -->
+                          Embed Tweet
+                        </button>
+                        <button type="button">
+                          <!-- Icon -->
+                          Unfollow @seeupeng
+                        </button>
+                        <button type="button">
+                          <!-- Icon -->
+                          Mute @seeupeng
+                        </button>
+                        <button type="button">
+                          <!-- Icon -->
+                          Block @seeupeng
+                        </button>
+                        <button type="button">
+                          <!-- Icon -->
+                          Report Tweet
+                        </button>
+                      </div>
+                    </div>
+      </header>
+<aside>
       <ol>
         <li>
           <button type="button" aria-label="Options">
@@ -675,26 +778,15 @@
         </li>
       </ol>
       <footer>
-        <button type="button">Show more</button>
-      </footer>
-    </aside>
-    <ol>
-        <li>
-          <a href="#" target="_blank">Terms</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Privacy</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">policy</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Cookies</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Ads info</a>
-        </li>
-        <li>
+            <ol>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/cookie-policy">Cookie Policy</a></li>
+              <li><a href="/ads-info">Ads info</a></li>
+              <li><a href="/more">More</a></li>
+            </ol>
+            <span>&copy; 2021 Twitter, Inc.</span>
+          </footer>
           <button type="button">
             More
             <!-- Icon -->
@@ -705,9 +797,5 @@
             <a href="#">Businesses</a>
             <a href="#">Developers</a>
           </div>
-        </li>
-      </ol>
-      <span>© 2019 Twitter, Inc.</span>
-    </footer>
   </body>
 </html>
